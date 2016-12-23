@@ -1,4 +1,4 @@
-[![Requirements Status](https://requires.io/github/skevas/unshorten/requirements.svg?branch=master)](https://requires.io/github/skevas/unshorten/requirements/?branch=master)
+[![Requirements Status](https://requires.io/github/skevas/unshorten/requirements.svg?branch=master)](https://requires.io/github/skevas/unshorten/requirements/?branch=master) [![Build Status](https://travis-ci.org/skevas/unshorten.svg?branch=master)](https://travis-ci.org/skevas/unshorten)
 
 ## Synopsis
 
