@@ -15,7 +15,6 @@ class IsUrlShortener(object):
     """IsUrlShortener
 
     This class contains all required program logic.
-
     """
 
     @staticmethod
@@ -26,7 +25,6 @@ class IsUrlShortener(object):
             url: URL to check
         Returns:
             True or False
-
         """
         return IsUrlShortener._is_in_servicelist(url, 'data/shortener_services.txt')
 
@@ -43,7 +41,7 @@ class IsUrlShortener(object):
 
     @staticmethod
     def is_or_was_from_url_shortener(url: str) -> bool:
-        """Checks if a given URL is from an in-/active URL shortener
+        """Checks if a given URL or domain is from an in-/active URL shortener
 
         Args:
             url: URL to check
@@ -54,7 +52,7 @@ class IsUrlShortener(object):
                IsUrlShortener.is_url_shortener(url)
 
     @staticmethod
-    def _is_in_servicelist(url: str, servicelist: str) -> bool:
+    def _is_in_servicelist(service_domain: str, servicelist: str) -> bool:
         """Checks if a given URL is included in a given service list
 
         Args:
@@ -64,14 +62,13 @@ class IsUrlShortener(object):
             True or False
         Raises:
             FileNotFoundError: If servicelist is not found
-
         """
-        if not url:
+        if not service_domain:
             return False
 
         with open(os.path.join(os.path.dirname(__file__), servicelist), 'r') as shortener_list:
             for shortener in shortener_list:
-                regex = '(http[s]?://)?{}/.*'.format(shortener.rstrip().replace('.', '\.'))
-                if len(re.findall(regex, url)) > 0:
+                regex = '(http[s]?://)?{}(/.*)?'.format(shortener.rstrip().replace('.', '\.'))
+                if len(re.findall(regex, service_domain)) > 0:
                     return True
         return False

@@ -31,6 +31,7 @@ class TestIsUrlShortener(unittest.TestCase):
     def test_is_or_was_shortener(self):
         expected = {'bitly.is/1g3AhR6': True,
                     'fur.ly/1g3AhR6': True,
+                    'bitly.is': True,
                     'www.google.com': False}
 
         for k, v in expected.items():
