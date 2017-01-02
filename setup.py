@@ -3,7 +3,7 @@
 from distutils.core import setup
 
 setup(name='isurlshortener',
-      version='0.1.2',
+      version='0.1.3',
       description='Provides information if a given url is from an url shortener service',
       author='Raphael Ernst',
       author_email='github@matinale.de',
