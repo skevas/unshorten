@@ -33,3 +33,12 @@ class TestUnshortener(unittest.TestCase):
 
         for short_url, long_url in sample_set.items():
                 self.assertEqual(long_url, Unshortener.unshorten_url(short_url))
+
+    def test_get_location_from_header(self):
+        header = [('content-length', '0'),
+                  ('date', 'Mon, 30 Jan 2017 18:48:49 GMT'),
+                  ('location', 'https://twitter.com/abc'),
+                  ('server', 'tsa_o')]
+
+        expected = 'https://twitter.com/abc'
+        self.assertEqual(expected, Unshortener._get_location_from_header(header))

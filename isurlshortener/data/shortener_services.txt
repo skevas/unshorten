@@ -38,6 +38,7 @@ snipr.com
 snipurl.com
 snurl.com
 sp2.ro
+t.co
 thrdl.es
 tighturl.com
 tinyarro.ws
