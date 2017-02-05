@@ -3,7 +3,7 @@ python:
   - "3.4"
   - "3.5"
 sudo: false
-install:
-  - pip install nose2 cov-core
 script:
-  - nose2 --with-coverage
+  - "nosetests" 
+after_success:
+  - codecov
