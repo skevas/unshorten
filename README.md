@@ -1,4 +1,4 @@
-[![Requirements Status](https://requires.io/github/skevas/unshorten/requirements.svg?branch=master)](https://requires.io/github/skevas/unshorten/requirements/?branch=master) [![Build Status](https://travis-ci.org/skevas/unshorten.svg?branch=master)](https://travis-ci.org/skevas/unshorten)
+[![Requirements Status](https://requires.io/github/skevas/unshorten/requirements.svg?branch=master)](https://requires.io/github/skevas/unshorten/requirements/?branch=master) [![Build Status](https://travis-ci.org/skevas/unshorten.svg?branch=master)](https://travis-ci.org/skevas/unshorten)[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/skevas/unshorten.svg)](http://isitmaintained.com/project/skevas/unshorten "Average time to resolve an issue")[![Percentage of issues still open](http://isitmaintained.com/badge/open/skevas/unshorten.svg)](http://isitmaintained.com/project/skevas/unshorten "Percentage of issues still open")
 
 ## Synopsis
 
