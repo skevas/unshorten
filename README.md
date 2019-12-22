@@ -9,7 +9,7 @@ A simple tool to check if a given URL is a shortened URL (e.g., from bit.ly). Yo
 ## Code Example
 
 ```
-from isurlunshorten import *
+from isurlshortener import *
 Unshortener.unshorten_url('http://bit.ly/1ixYuRi')
 IsUrlShortener.is_url_shortener('http://bit.ly/1ixYuRi')
 ```
